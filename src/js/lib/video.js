@@ -5,25 +5,30 @@ function initVideoJS() {
     const videos = document.querySelectorAll('[data-videojs]');
     videos.forEach(video => {
       const player = videojs(video, {
-        playsinline: true,
-        noUITitleAttributes: true,
-        disablePictureInPicture: true,
-        controlBar: false,
-        controls: false,
-        bigPlayButton: true,
-        titleBar: false,
-        textTrackDisplay: false,
-        children: ['mediaLoader'],
-        children_: [],
+        // playsinline: true,
+        // noUITitleAttributes: true,
+        // // disablePictureInPicture: true,
+        // controlBar: false,
+        // controls: true,
+        // bigPlayButton: true,
+        // titleBar: false,
+        // textTrackDisplay: false,
+        // children: ['mediaLoader'],
+        // children_: [],
       });
 
-      video.addEventListener('click', function () {
+      video.parentElement.addEventListener('click', function () {
         if (video.closest('.vjs-playing')) {
           player.pause();
+          console.log('log');
         }
       });
     });
   }
 }
+
+document.addEventListener('click', function (e) {
+  console.log(e.target);
+});
 
 initVideoJS();

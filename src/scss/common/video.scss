@@ -1,6 +1,10 @@
 .vjs_video_3-dimensions {
   width: auto;
   height: auto;
+
+  @media (max-width: 48em) {
+    height: 54rem;
+  }
 }
 
 .vjs-big-play-button {
