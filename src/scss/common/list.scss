@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  // .list__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+
+      @media (max-width: 48em) {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+
+  // .list__txt
+
+  &__txt {
+    font-weight: 300;
+  }
+}

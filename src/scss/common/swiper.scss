@@ -1,0 +1,17 @@
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.swiper-pagination-bullet {
+  flex: 0 0 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid $blue;
+
+  &.swiper-pagination-bullet-active {
+    background-color: $blue;
+  }
+}

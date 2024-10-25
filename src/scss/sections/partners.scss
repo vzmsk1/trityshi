@@ -1,0 +1,94 @@
+.partners {
+  @media (min-width: 48em) {
+    margin-bottom: 17rem;
+  }
+
+  // .partners__container
+
+  &__container {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  // .partners__title
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    @media (max-width: 48em) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  // .partners__text
+
+  &__text {
+    margin-bottom: 4rem;
+
+    max-width: 101rem;
+
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+
+  // .partners__slider
+
+  &__slider {
+    &.swiper {
+      width: 100%;
+    }
+  }
+
+  // .partners__wrapper
+
+  &__wrapper {
+    @media (min-width: 48em) {
+      &.swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+      }
+    }
+  }
+
+  // .partners__slide
+
+  &__slide {
+  }
+}
+
+.partner-card {
+  &.swiper-slide {
+    width: auto;
+    height: auto;
+  }
+
+  // .partner-card__image-wrap
+
+  &__image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.8rem;
+    height: 18.4rem;
+
+    background-color: $white;
+
+    @media (max-width: 48em) {
+      border-radius: 3.2rem;
+    }
+  }
+
+  // .partner-card__image
+
+  &__image {
+    width: 22rem;
+  }
+}

@@ -6,6 +6,8 @@ $white: #ffffff;
 $blue: #02c8ff;
 $orange: #ff9a02;
 $gray: #8c8e93;
+$lightBlue: #f1f8ff;
+$lightGray: #e7ebee;
 
 // ---------------------------------- fonts ---------------------------------
 
@@ -14,11 +16,53 @@ $gray: #8c8e93;
 
 // ------------------------------- base styles ------------------------------
 
+.wrapper {
+  overflow: hidden;
+}
+
+body {
+  ._show-menu & {
+    overflow: hidden;
+  }
+}
+
+// swiper fade fix
+.swiper-fade {
+  .swiper-slide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    &.swiper-slide-active {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  }
+}
+
 // base scss file
 @import 'base/set';
+
+@import 'common/btn';
+@import 'common/field';
+@import 'common/typo';
+@import 'common/list';
+@import 'common/swiper';
+@import 'common/video';
+@import 'common/controls';
 
 // --------------------------------------------------------------------------
 
 @import 'base/header';
+@import 'base/footer';
 
 // sections
+@import 'sections/hero';
+@import 'sections/services';
+@import 'sections/booking';
+@import 'sections/about';
+@import 'sections/team';
+@import 'sections/reviews';
+@import 'sections/partners';
+@import 'sections/prodent';
+@import 'sections/docs';
+@import 'sections/contacts';

@@ -1,0 +1,44 @@
+.controls {
+  display: flex;
+  column-gap: 1.2rem;
+
+  // .controls__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 7rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+
+    background-color: $white;
+
+    svg {
+      width: 3.2rem;
+      height: 3.2rem;
+
+      transition: color 0.3s ease;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        svg {
+          color: $blue;
+        }
+      }
+    }
+
+    // .controls__btn_prev
+
+    &_prev {
+    }
+
+    // .controls__btn_next
+
+    &_next {
+      transform: rotate(180deg);
+    }
+  }
+}

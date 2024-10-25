@@ -29,7 +29,7 @@ body {
 
   @media (max-width: 48em) {
     font-size: 2.8rem;
-    line-height: 3rem;
+    line-height: 120%;
   }
 }
 
@@ -119,7 +119,7 @@ input[type='number'] {
 }
 
 section {
-  margin-bottom: 17rem;
+  margin-bottom: 15rem;
 }
 
 .container {
@@ -139,8 +139,12 @@ section {
     -webkit-text-size-adjust: none;
   }
 
+  section {
+    margin-bottom: 18rem;
+  }
+
   .container {
-    padding: 0 4rem;
+    padding: 0 3rem;
     width: 100%;
   }
 }

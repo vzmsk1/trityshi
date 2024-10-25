@@ -1,0 +1,95 @@
+.about {
+  position: relative;
+
+  @media (min-width: 48em) {
+    margin-bottom: 20rem;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: -29rem;
+      left: -11rem;
+
+      width: 222.7rem;
+      height: 208.7rem;
+
+      background: url(@img/bg/1076.svg) center / contain no-repeat;
+    }
+  }
+
+  // .about__container
+
+  &__container {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width: 48em) {
+      flex-direction: column;
+    }
+  }
+
+  // .about__video
+
+  &__video {
+    position: relative;
+
+    video {
+      width: 80rem;
+      border-radius: 3.2rem;
+      height: 100%;
+
+      object-fit: cover;
+
+      @media (max-width: 48em) {
+        width: 100%;
+      }
+    }
+  }
+
+  // .about__content
+
+  &__content {
+    padding: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4rem;
+    border-radius: 3.2rem;
+
+    background-color: $white;
+  }
+
+  // .about__title
+
+  &__title {
+  }
+
+  // .about__text-wrap
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  // .about__text
+
+  &__text {
+    font-weight: 300;
+
+    @media (min-width: 48em) {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+    }
+  }
+
+  // .about__btn
+
+  &__btn {
+  }
+}

@@ -1,0 +1,46 @@
+<section class="booking container">
+  <div class="booking__container">
+    <div class="booking__content">
+      <span class="booking__title"
+        >Запишитесь прямо сейчас и получите бесплатную консультацию</span
+      >
+      <form action="#" class="booking__form">
+        <div class="booking__fields">
+          <div class="booking__input-wrap field">
+            <svg><use href="#user-icon"></use></svg>
+            <input
+              autocomplete="off"
+              type="text"
+              name="form[]"
+              placeholder="Имя"
+              class="field__input" />
+          </div>
+          <div class="booking__input-wrap field">
+            <svg><use href="#tel-icon"></use></svg>
+            <input
+              data-tel-mask
+              autocomplete="off"
+              type="tel"
+              name="form[]"
+              placeholder="Номер телефона"
+              class="field__input" />
+          </div>
+        </div>
+        <p class="booking__text">
+          Нажимая на кнопку 'Записаться', вы соглашаетесь с <a
+            href="#"
+            class="booking__text-highlight"
+            >Политикой обработки персональных данных</a
+          >
+        </p>
+        <button class="booking__btn btn btn_orange">
+          <span class="btn__txt">Отправить заявку</span
+          ><svg><use href="#arrow-icon"></use></svg>
+        </button>
+      </form>
+    </div>
+    <div class="booking__image-wrap">
+      <img src="@img/content/1079.webp" class="booking__image" alt="" />
+    </div>
+  </div>
+</section>

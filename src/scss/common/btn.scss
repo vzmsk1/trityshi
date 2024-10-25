@@ -1,0 +1,99 @@
+.btn {
+  padding: 0 2.8rem;
+
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+  border-radius: 8rem;
+  height: 5.6rem;
+
+  overflow: hidden;
+
+  background-color: $blue;
+
+  transition: background-color 0.3s ease;
+
+  @media (max-width: 48em) {
+    padding: 0 3rem;
+
+    height: 7rem;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 4rem;
+  }
+
+  svg {
+    flex: 0 0 5.8rem;
+    width: 5.8rem;
+
+    color: $white;
+
+    transition: color 0.3s ease;
+  }
+
+  // .btn__txt
+
+  &__txt {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+
+    @media (max-width: 48em) {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+  }
+
+  &_secondary {
+    padding: 1.1rem 0.4rem;
+
+    height: 4rem;
+    border-radius: 0;
+
+    background-color: transparent;
+
+    @media (max-width: 48em) {
+      padding: 0;
+    }
+
+    .btn__txt {
+      color: $black;
+    }
+
+    svg {
+      color: $black;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        .btn__txt,
+        svg {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  &_orange {
+    background-color: $orange;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #ffb74b;
+      }
+    }
+  }
+
+  &:not(&_secondary, &_orange) {
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #79e2ff;
+      }
+    }
+  }
+}
