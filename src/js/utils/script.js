@@ -32,3 +32,7 @@ document.addEventListener('click', function (e) {
     document.documentElement.classList.remove('_show-services-menu');
   }
 });
+
+window.addEventListener('load', function () {
+  document.querySelector('body').removeAttribute('style');
+});
