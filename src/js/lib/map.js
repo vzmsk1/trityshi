@@ -19,7 +19,7 @@ async function initMap() {
       center: [37.59909399999991, 55.74476356897821],
       zoom: 17,
     },
-    behaviors: ['drag', 'scrollZoom'],
+    behaviors: ['drag', 'scrollZoom', 'multiTouch'],
   });
 
   map.addChild(new YMapDefaultSchemeLayer());
