@@ -17,11 +17,15 @@ function initVideoJS() {
         children_: [],
       });
 
-      video.parentElement.addEventListener('click', function () {
-        if (video.closest('.vjs-playing')) {
-          player.pause();
-        }
-      });
+      document
+        .querySelector('.about__poster')
+        .addEventListener('click', function () {
+          if (player.paused()) {
+            player.play();
+          } else {
+            player.pause();
+          }
+        });
     });
   }
 }

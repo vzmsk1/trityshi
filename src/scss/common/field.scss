@@ -43,7 +43,7 @@ input:focus {
   // .field__input
 
   &__input {
-    padding: 2.5rem 1.7rem 2rem 5.1rem;
+    padding: 2rem 1.6rem 2rem 5rem;
 
     width: 100%;
     border-radius: 18.6rem;
@@ -80,6 +80,39 @@ input:focus {
       @media (min-width: 48em) {
         font-size: 2rem;
         line-height: 2.4rem;
+      }
+    }
+  }
+
+  &_textarea {
+    .field {
+      &__input {
+        height: 17rem;
+
+        resize: none;
+
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+
+        &::-webkit-scrollbar {
+          display: none; /* Safari and Chrome */
+        }
+
+        @media (min-width: 48em) {
+          height: 10.8rem;
+          border-radius: 2.4rem;
+        }
+      }
+    }
+
+    svg {
+      top: 2rem;
+      left: 1.6rem;
+
+      transform: none;
+
+      @media (max-width: 48em) {
+        top: 3rem;
       }
     }
   }

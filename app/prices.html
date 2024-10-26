@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Цены</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="https://api-maps.yandex.ru/v3/?apikey=402f83d9-3e90-4726-b547-87890093893a&lang=ru_RU"></script>
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+</head>
+
+<body style="opacity: 0">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__main">
+					<a href="#" class="header__logo"><img src="img/logo.svg" class="header__logo-image" alt="" /></a>
+					<form data-da=".header__container,768,last" action="#" class="header__search search-header">
+						<input autocomplete="off" type="search" name="form[]" placeholder="Найти услугу" class="search-header__input" />
+						<button class="search-header__btn">
+							<svg>
+								<use href="#search-icon"></use>
+							</svg>
+						</button>
+					</form>
+					<a data-da=".menu-header__group,768,last" href="#" class="header__request-btn btn"><span class="btn__txt">Оставить заявку</span>
+						<svg>
+							<use href="#arrow-icon"></use>
+						</svg></a>
+					<div data-da=".menu-header__group,768,last" class="header__contacts contacts-header">
+						<div class="contacts-header__content">
+							<a href="tel:84951046127" class="contacts-header__tel">8-495-104-61-27</a>
+							<span class="contacts-header__txt">с 9:00 до 21:00</span>
+						</div>
+						<a href="tel:84951046127" class="contacts-header__icon-wrap">
+							<svg>
+								<use href="#tel-icon"></use>
+							</svg></a>
+					</div>
+					<button class="header__hamburger hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<nav data-da=".menu-header__container,768,first" class="header__nav nav-header">
+					<button type="button" class="nav-header__txt-wrap header-services-btn">
+						<span class="nav-header__txt">Услуги</span><svg>
+							<use href="#arrow-icon-2"></use>
+						</svg>
+					</button>
+					<a href="#" class="nav-header__txt-wrap"><span class="nav-header__txt">Блог</span></a>
+					<a href="#" class="nav-header__txt-wrap"><span class="nav-header__txt">Акции</span></a>
+					<a href="#" class="nav-header__txt-wrap"><span class="nav-header__txt">Контакты</span></a>
+					<a href="#" class="nav-header__txt-wrap"><span class="nav-header__txt">Цены</span></a>
+					<a href="#" class="nav-header__txt-wrap"><span class="nav-header__txt">Врачи</span></a>
+					<a href="#" class="nav-header__txt-wrap"><span class="nav-header__txt">Отзывы</span></a>
+					<a href="#" class="nav-header__txt-wrap"><span class="nav-header__txt">О клинике</span></a>
+				</nav>
+				<div class="header__menu menu-header">
+					<div class="menu-header__container container">
+						<div class="menu-header__group"></div>
+					</div>
+				</div>
+				<div class="header__services services-header">
+					<button class="services-header__btn">
+						<svg>
+							<use href="#arrow-icon-2"></use>
+						</svg>
+						<span class="services-header__btn-txt">Назад</span>
+					</button>
+					<span class="services-header__title title">Услуги</span>
+					<ul class="services-header__list">
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Диагностика</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Терапия</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Гигиена</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Эстетика</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Пародонтология</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Ортодонтия</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Ортопедия</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Хирургия</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Детская стоматология</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Имплантология</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Синуслифтинг</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Пластика рецессии</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Снятие брекетов</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Снятие ретейнеров</a>
+						</li>
+						<li class="services-header__item">
+							<a href="#" class="services-header__txt">Коронки РММА</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="prices">
+				<div class="prices__container container">
+					<nav class="prices__breadcrumbs breadcrumbs">
+						<a href="#" class="breadcrumbs__item">Главная</a>
+						<span class="breadcrumbs__item">Цены</span>
+					</nav>
+					<span class="prices__title title">Стоимость услуг</span>
+					<div class="prices__services">
+						<button class="prices__badge badge _is-active">Диагностика</button>
+						<button class="prices__badge badge">Терапия</button>
+						<button class="prices__badge badge">Гигиена</button>
+						<button class="prices__badge badge">Эстетика</button>
+						<button class="prices__badge badge">Парадонтология</button>
+						<button class="prices__badge badge">Ортодонтия</button>
+						<button class="prices__badge badge">Ортопедия</button>
+						<button class="prices__badge badge">Хирургия</button>
+						<button class="prices__badge badge">Детская стоматология</button>
+						<button class="prices__badge badge">Имплантология</button>
+						<button class="prices__badge badge">Синуслифтинг</button>
+						<button class="prices__badge badge">Пластика рецессии</button>
+						<button class="prices__badge badge">Снятие брекетов</button>
+						<button class="prices__badge badge">Снятие ретейнеров</button>
+						<button class="prices__badge badge">Коронки РММА</button>
+					</div>
+					<div class="prices__content">
+						<span class="prices__subtitle">Диагностика</span>
+						<div class="prices__group">
+							<div class="prices__list">
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием ( осмотр, консультация) врача-стоматолога —ортопеда KMH
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием ( осмотр, консультация) врача-стоматолога —ортопеда
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 500</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога-хирурга КМН
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога-хирурга
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-ортодонта КМН
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога детского
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога-пародонтолога
+											КМН (первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога-пародонтолога
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span><svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога-терапевта
+											(первичный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога-терапевта
+											(повторный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Медицинское фотографирование , дентальная съемка (
+											фотопротокол)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Прием (осмотр, консультация) врача-стоматолога-терапевта
+											(повторный)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+								<a href="#" class="prices__item item-prices item-prices">
+									<div class="item-prices__name-wrap">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="item-prices__name">Медицинское фотографирование , дентальная съемка (
+											фотопротокол)</span>
+									</div>
+									<div class="item-prices__price">
+										<span class="item-prices__price-value">1 700</span>
+										<svg>
+											<use href="#rub-icon"></use>
+										</svg>
+									</div>
+									<button class="item-prices__btn btn btn_secondary">
+										<span class="btn__txt">Записаться</span><svg>
+											<use href="#arrow-icon"></use>
+										</svg>
+									</button>
+								</a>
+							</div>
+							<div class="prices__consultation consultation-card">
+								<div class="consultation-card__body">
+									<span class="consultation-card__subtitle subtitle">Запишитесь на бесплатную консультацию</span>
+									<p class="consultation-card__text">
+										Оставьте заявку и наш менеджер свяжется с вами в кротчайшие сроки
+									</p>
+									<a href="#" class="consultation-card__btn btn btn_orange"><span class="btn__txt">Записаться</span>
+										<svg>
+											<use href="#arrow-icon"></use>
+										</svg></a>
+								</div>
+
+								<div class="consultation-card__image-wrap">
+									<img src="img/content/19248.webp" class="consultation-card__image" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="info">
+				<div class="info__container container">
+					<div class="info__group">
+						<div class="info__content">
+							<span class="info__title title">Важна ли
+								<span class="info__highlight">диагностика</span> в стоматологии?</span>
+							<div class="info__list-wrap">
+								<span class="info__subtitle">Виды рентгеновских методов, широко используемых для диагностики
+									состояния зубов:</span>
+								<ul class="info__list">
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Прицельный дентальный снимок (выполняется внутри полости рта,
+											дает возможность детально разглядеть один или два зуба
+											и прилегающие ткани);</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Ортопантомография (панорамное двухмерное изображение всей
+											зубочелюстной системы, дает более подробные данные и полную
+											картину)</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Компьютерная томография (трехмерное изображение, позволяющее
+											изучить исследуемую область во всех деталях и в любой
+											проекции)</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Искусственный интеллект «Диагнокат» — это компьютерная
+											программа визуализации, используемая в рентгенологии
+											для повышения точности диагностики</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info__image-wrap">
+							<img src="img/content/635.webp" class="info__image" alt="" />
+						</div>
+					</div>
+					<div class="info__group">
+						<div class="info__image-group">
+							<div class="info__image-wrap info__image-wrap_large _desktop-only">
+								<img src="img/content/1111.webp" class="info__image" alt="" />
+							</div>
+							<div class="info__card card-info">
+								<div class="card-info__inner">
+									<span class="card-info__title">Высокие стандарты качества и безопасности.</span>
+									<p class="card-info__text txt">
+										Для нас крайне важно, чтобы вы, наши пациенты, могли быть уверены
+										в профессионализме нашей команды
+									</p>
+								</div>
+
+								<div class="card-info__image-wrap">
+									<img src="img/content/632.webp" class="card-info__image" alt="" />
+								</div>
+							</div>
+							<div class="info__image-wrap _desktop-only">
+								<img src="img/content/633.webp" class="info__image" alt="" />
+							</div>
+						</div>
+						<div class="info__content">
+							<div class="info__list-wrap">
+								<span class="info__subtitle">Показания для проведения рентгенологической диагностики?</span>
+								<ul class="info__list">
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Диагностика осложненных форм кариеса либо подозрение на наличие
+											скрытой полости.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Лечение пульпита c предстоящим пломбированием каналов.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Исключение образования кист и гранулем на верхушках зубных
+											корней.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Подготовка к хирургическому удалению зубов (для определения
+											количества и расположения корневых каналов).</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Планирование предстоящей стоматологической операции.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Диагностика заболеваний челюстно-лицевой области.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Составление плана имплантации и других видов протезирования
+											зубов (необходимо определение объема необходимой костной
+											ткани).</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Наличие патологического прикуса и неправильного смыкания
+											челюстей (окклюзии), планирование ортодонтического
+											лечения.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Выявление опухолей мягких тканей и костей лица.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Травмы c повреждением костей челюстно-лицевой области.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Подозрение на патологию височно-нижнечелюстных суставов.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Проблемы c прорезыванием и ростом зубов.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Контроль эффективности различных видов стоматологического
+											лечения.</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="info__group">
+						<div class="info__content">
+							<span class="info__title title title_2">Развеем миф о страшном вреде рентгеновского излучения</span>
+							<div class="info__text-wrap txt">
+								<p class="info__text">
+									Как обычно, всё дело в дозе. Для того чтобы превысить предельно
+									допустимый уровень лучевой нагрузки в 1000 микрозиверт в год,
+									необходимо сделать не менее 20 КТ, свыше 80 ортопантомограмм или
+									несколько сотен прицельных снимков. Как считаете, вам действительно
+									понадобится такое количество исследований?Вероятнее всего даже
+									в процессе длительного и сложного лечения потребуется не более 3−5
+									снимков. А иногда всё обходится одним-двумя.Кроме того, перед тем,
+									как делать рентгеновский снимок зубов, на вас наденут защитный
+									фартук.
+								</p>
+								<p class="info__text">
+									Компьютерную томографию по праву считают самым лучшим, современным
+									и точным методом диагностики в стоматологии. Трехмерное панорамное
+									изображение дает полную картину и позволяет увидеть во всех
+									подробностях не только зубные единицы, но также челюсти и мягкие
+									ткани.
+								</p>
+							</div>
+						</div>
+						<div class="info__wrap">
+							<p class="info__text txt txt_32">
+								Компьютерную томографию по праву считают самым лучшим, современным
+								и точным методом диагностики в стоматологии.
+							</p>
+							<div class="info__image-wrap">
+								<img src="img/content/6324.webp" class="info__image" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="info__group">
+						<div class="info__wrap">
+							<span class="info__title title title_2">Развеем миф о страшном вреде рентгеновского излучения</span>
+							<div class="info__image-group _desktop-only">
+								<div class="info__image-wrap">
+									<img src="img/content/632446.webp" class="info__image" alt="" />
+								</div>
+								<div class="info__image-wrap">
+									<img src="img/content/632447.webp" class="info__image" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="info__content">
+							<div class="info__list-wrap">
+								<span class="info__subtitle">Предварительной подготовки не требуется, но женщинам необходимо
+									убедиться в отсутствии беременности.Непосредственно перед процедурой
+									пациенту необходимо:</span>
+								<ul class="info__list">
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Необходимо снять с себя все металлические предметы: очки,
+											шпильки, заколки, ювелирные украшения, а также слуховые
+											аппараты;</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">удалить изо рта съемные протезы</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">сообщить о наличии несъемных металлических протезов
+											для изменения настроек томографа;</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">надеть свинцовый фартук, закрывающий, в том числе и грудную
+											клетку.</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="info__group">
+						<div class="info__content">
+							<div class="info__list-wrap">
+								<p class="info__text txt">
+									Отдельно стоит упомянуть новое слово в рентгеновской диагностике —
+									программу, основанную на искусственном интеллекте — «Диагнокат»
+									(Diagnocat). Компьютер сопоставляет многочисленные данные по более,
+									чем 100 признакам, полученным в ходе конусно-лучевой компьютерной
+									томографии (КЛКТ).
+								</p>
+								<ul class="info__list">
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">возможность выявления широчайшего спектра патологий
+											зубочелюстного аппарата и прилегающих тканей, в том числе
+											сложных случаев;</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">высокая скорость обработки и выдачи данных;</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">главное, полное исключение человеческого фактора (а значит,
+											субъективности оценок) при анализе данных.
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="booking booking_has-bg container">
+							<div class="booking__container">
+								<div class="booking__content">
+									<span class="booking__title">Запишитесь прямо сейчас и получите бесплатную консультацию</span>
+									<form action="#" class="booking__form">
+										<div class="booking__fields">
+											<div class="booking__input-wrap field">
+												<svg>
+													<use href="#user-icon"></use>
+												</svg>
+												<input autocomplete="off" type="text" name="form[]" placeholder="Имя" class="field__input" />
+											</div>
+											<div class="booking__input-wrap field">
+												<svg>
+													<use href="#tel-icon"></use>
+												</svg>
+												<input data-tel-mask autocomplete="off" type="tel" name="form[]" placeholder="Номер телефона" class="field__input" />
+											</div>
+										</div>
+										<p class="booking__text">
+											Нажимая на кнопку 'Записаться', вы соглашаетесь с <a href="#" class="booking__text-highlight">Политикой обработки персональных данных</a>
+										</p>
+										<button class="booking__btn btn btn_orange">
+											<span class="btn__txt">Отправить заявку</span><svg>
+												<use href="#arrow-icon"></use>
+											</svg>
+										</button>
+									</form>
+								</div>
+							</div>
+							<div class="booking__image-wrap">
+								<img src="img/content/1079.webp" class="booking__image" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="info__group">
+						<div class="info__image-wrap _desktop-only">
+							<img src="img/content/632452.webp" class="info__image" alt="" />
+						</div>
+						<div class="info__content">
+							<div class="info__list-wrap">
+								<span class="info__title title">Противопоказания к рентгеновским исследованиям:</span>
+								<ul class="info__list">
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">1 и 2 триместры беременности.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Период грудного вскармливания.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Тяжелые соматические и инфекционные заболевания.</span>
+									</li>
+									<li class="info__item">
+										<svg>
+											<use href="#tooth-icon"></use>
+										</svg>
+										<span class="info__item-txt txt">Психические расстройства в стадии обострения.</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="team">
+				<div class="team__container container">
+					<span class="team__title title">Наша команда</span>
+					<div class="team__slider swiper">
+						<div class="team__wrapper swiper-wrapper">
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Абрамова Татьяна Александровна</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/12.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Бриштен Виктория Леонидовна</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/6.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Тупатилов Кирилл Валерьевич</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/photo.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Абрамова Татьяна Александровна</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/12.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Бриштен Виктория Леонидовна</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/6.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Тупатилов Кирилл Валерьевич</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/photo.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Абрамова Татьяна Александровна</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/12.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Бриштен Виктория Леонидовна</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/6.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+							<div class="team__slide slide-team swiper-slide">
+								<div class="slide-team__content">
+									<span class="slide-team__name">Тупатилов Кирилл Валерьевич</span>
+									<span class="slide-team__subtitle">Основатель и генеральный директор</span>
+									<div class="slide-team__text-wrap">
+										<p class="slide-team__text">
+											Меня зовут Абрамова Татьяна Александровна, я основатель
+											и генеральный директор центра прогрессивной стоматологии
+											«ProDent Concept».
+										</p>
+										<p class="slide-team__text">
+											Наша философия-забота о пациентах, сохранение стоматологического
+											здоровья. Хочу заверить вас, что в «ProDent Concept» вы получите
+											своевременную, безболезненную, высококачественную и безопасную
+											стоматологическую помощь по самым высоким мировым стандартам.
+										</p>
+									</div>
+									<div class="slide-team__actions">
+										<a href="#" class="slide-team__btn btn btn_orange"><span class="btn__txt">Написать директору</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+										<a href="#" class="slide-team__btn btn btn_secondary"><span class="btn__txt">читать далее</span>
+											<svg>
+												<use href="#arrow-icon"></use>
+											</svg></a>
+									</div>
+								</div>
+								<div class="slide-team__image-wrap">
+									<img src="img/content/photo.webp" class="slide-team__image" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="team__thumbs thumbs-team">
+						<button class="thumbs-team__btn thumbs-team__btn_prev">
+							<svg>
+								<use href="#arrow-icon-3"></use>
+							</svg>
+						</button>
+						<div class="thumbs-team__slider swiper">
+							<div class="thumbs-team__wrapper swiper-wrapper">
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/12.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Абрамова Татьяна Александровна</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/6.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Бриштен Виктория Леонидовна</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/photo.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Тупатилов Кирилл Валерьевич</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/12.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Абрамова Татьяна Александровна</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/6.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Бриштен Виктория Леонидовна</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/photo.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Тупатилов Кирилл Валерьевич</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/12.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Абрамова Татьяна Александровна</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/6.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Бриштен Виктория Леонидовна</span>
+								</div>
+								<div class="thumbs-team__slide slide-thumbs-team swiper-slide">
+									<div class="slide-thumbs-team__image-wrap">
+										<img src="img/content/photo.webp" class="slide-thumbs-team__image" alt="" />
+									</div>
+									<span class="slide-thumbs-team__title">Тупатилов Кирилл Валерьевич</span>
+								</div>
+							</div>
+						</div>
+						<button class="thumbs-team__btn thumbs-team__btn_next">
+							<svg>
+								<use href="#arrow-icon-3"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts contacts_has-bg">
+				<div class="contacts__container container">
+					<div id="contacts-map" class="contacts__map"></div>
+					<div class="contacts__body">
+						<span class="contacts__title title">Контакты</span>
+						<div class="contacts__content">
+							<ul class="contacts__list list-contacts">
+								<li class="list-contacts__item">
+									<span class="list-contacts__subtitle">Адрес</span>
+									<p class="list-contacts__text">
+										Москва, Гагаринский переулок, дом 5 строение 1 (Метро
+										Кропоткинская)
+									</p>
+								</li>
+								<li class="list-contacts__item">
+									<span class="list-contacts__subtitle">Время работы</span>
+									<p class="list-contacts__text">
+										с 09:00 до 21:00 (ежедневно)
+									</p>
+								</li>
+								<li class="list-contacts__item">
+									<span class="list-contacts__subtitle">Электронный адрес</span>
+									<a href="mailto:info@prodentconcept.com" class="list-contacts__text">info@prodentconcept.com</a>
+								</li>
+								<li class="list-contacts__item">
+									<span class="list-contacts__subtitle">Номер телефона</span>
+									<a href="tel:84951046127" class="list-contacts__text">8 (495) 104-61-27</a>
+								</li>
+							</ul>
+							<div class="contacts__group">
+								<ul class="contacts__socials socials-contacts">
+									<li class="socials-contacts__item">
+										<a href="#" target="_blank" class="socials-contacts__inner">
+											<svg>
+												<use href="#whatsapp-icon"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials-contacts__item">
+										<a href="#" target="_blank" class="socials-contacts__inner">
+											<svg>
+												<use href="#youtube-icon"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials-contacts__item">
+										<a href="#" target="_blank" class="socials-contacts__inner">
+											<svg>
+												<use href="#telegram-icon"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials-contacts__item">
+										<a href="#" target="_blank" class="socials-contacts__inner">
+											<svg>
+												<use href="#vk-icon"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+								<a href="#" class="contacts__btn btn btn_secondary"><span class="btn__txt">Подробнее</span>
+									<svg>
+										<use href="#arrow-icon"></use>
+									</svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__group">
+					<a href="#" class="footer__logo-wrap"><img src="img/logo.svg" class="footer__logo" alt="" /></a>
+					<p class="footer__text">
+						© 2024 ООО "ПРОДЕНТ" - центр прогрессивной стоматологии "ProDent
+						Concept"
+					</p>
+					<ul class="footer__row row-footer">
+						<li class="row-footer__item">
+							<div class="row-footer__image-wrap">
+								<img src="img/logos/1924.webp" class="row-footer__image" alt="" />
+							</div>
+						</li>
+						<li class="row-footer__item">
+							<div class="row-footer__image-wrap">
+								<img src="img/logos/1925.webp" class="row-footer__image" alt="" />
+							</div>
+						</li>
+					</ul>
+				</div>
+				<nav class="footer__nav">
+					<a href="#" class="footer__link">Услуги и цены</a>
+					<a href="#" class="footer__link">Врачи и запись</a>
+					<a href="#" class="footer__link">Отзывы</a>
+					<a href="#" class="footer__link">Акции</a>
+					<a href="#" class="footer__link">Пациентам</a>
+					<a href="#" class="footer__link">Контакты</a>
+					<a href="#" class="footer__link">О клинике</a>
+					<a href="#" class="footer__link">Отправить заявку</a>
+					<a href="#" class="footer__link">Лицензии</a>
+					<a href="#" class="footer__link">Блог</a>
+					<a href="#" class="footer__link">Вопрос-ответ</a>
+					<a href="#" class="footer__link">Вакансии</a>
+				</nav>
+				<div class="footer__contacts">
+					<div class="footer__call contacts-header">
+						<div class="contacts-header__content">
+							<a href="tel:84951046127" class="contacts-header__tel">8-495-104-61-27</a>
+							<span class="contacts-header__txt">с 9:00 до 21:00</span>
+						</div>
+						<a href="tel:84951046127" class="contacts-header__icon-wrap">
+							<svg>
+								<use href="#tel-icon"></use>
+							</svg></a>
+					</div>
+					<p class="footer__text">Москва, Гагаринский переулок, д. 5 стр. 1</p>
+					<ul class="footer__socials socials">
+						<li class="socials__item">
+							<a href="#" target="_blank" class="socials__inner">
+								<svg>
+									<use href="#whatsapp-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" target="_blank" class="socials__inner">
+								<svg>
+									<use href="#youtube-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" target="_blank" class="socials__inner">
+								<svg>
+									<use href="#telegram-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a href="#" target="_blank" class="socials__inner">
+								<svg>
+									<use href="#vk-icon"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__info info-footer">
+				<div class="info-footer__container container">
+					<div class="info-footer__text-wrap">
+						<span class="info-footer__title">ЕСТЬ ПРОТИВОПОКАЗАНИЯ - ТРЕБУЕТСЯ ОЧНАЯ КОНСУЛЬТАЦИЯ С ВРАЧОМ</span>
+						<p class="info-footer__text">
+							Сайт для посетителей старше 18 лет (18+). Информация, представленная
+							на сайте в виде цен, акций и спец предложений НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ
+							ОФЕРТОЙ, так как объем лечение каждого пациента зависит от
+							индивидуальной ситуации и состояния здоровья пациента - информация
+							носит ознакомительный характер и ориентирует о стандартном варианте
+							лечения, не является инструкцией или рекомендацией к действию. Прежде
+							чем использовать представленную на сайте информацию - требуется очная
+							консультация с лечащим врачом, во многих случаях имеются
+							противопоказания. Использование нашего сайта означает, что вы согласны
+							с условиями его использования.
+						</p>
+					</div>
+					<ul class="info-footer__list">
+						<li class="info-footer__item">
+							<a href="#" class="info-footer__link">Политика обработки персональных данных</a>
+						</li>
+						<li class="info-footer__item">
+							<a href="#" class="info-footer__link">Официальный сайт Министерства здравоохранения РФ</a>
+						</li>
+						<li class="info-footer__item">
+							<a href="#" class="info-footer__link">Официальный интернет-портал правовой информации</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.js"></script>
+	<svg display="none">
+		<symbol id="search-icon" viewBox="0 0 23 22">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M16.3945 15.9697C16.6874 15.6768 17.1622 15.6768 17.4551 15.9697L21.9551 20.4697C22.248 20.7626 22.248 21.2374 21.9551 21.5303C21.6622 21.8232 21.1874 21.8232 20.8945 21.5303L16.3945 17.0303C16.1016 16.7374 16.1016 16.2626 16.3945 15.9697Z" fill="#32393C" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.674805 10C0.674805 4.61522 5.04003 0.25 10.4248 0.25C15.8096 0.25 20.1748 4.61522 20.1748 10C20.1748 15.3848 15.8096 19.75 10.4248 19.75C5.04003 19.75 0.674805 15.3848 0.674805 10ZM10.4248 1.75C5.86846 1.75 2.1748 5.44365 2.1748 10C2.1748 14.5563 5.86846 18.25 10.4248 18.25C14.9812 18.25 18.6748 14.5563 18.6748 10C18.6748 5.44365 14.9812 1.75 10.4248 1.75Z" fill="#32393C" />
+		</symbol>
+		<symbol id="arrow-icon" viewBox="0 0 59 24">
+			<path d="M55.1319 12.7071C55.5224 12.3166 55.5224 11.6834 55.1319 11.2929L48.768 4.92893C48.3774 4.53841 47.7443 4.53841 47.3537 4.92893C46.9632 5.31946 46.9632 5.95262 47.3537 6.34315L53.0106 12L47.3537 17.6569C46.9632 18.0474 46.9632 18.6805 47.3537 19.0711C47.7443 19.4616 48.3774 19.4616 48.768 19.0711L55.1319 12.7071ZM4.4248 13H54.4248V11H4.4248V13Z" fill="currentColor" />
+		</symbol>
+		<symbol id="tel-icon" viewBox="0 0 33 33">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M24.8417 4.99976C27.5454 4.99976 29.9913 7.24721 29.4821 10.1539C27.7512 20.0345 19.9594 27.8263 10.0788 29.5572C7.17208 30.0664 4.92462 27.6205 4.92462 24.9169V21.3229C4.92462 20.2021 5.82375 19.3621 6.85512 19.291C8.23722 19.1958 9.56029 18.8899 10.7933 18.4056C11.1635 18.2602 11.5847 18.348 11.866 18.6293L13.5302 20.2935C16.369 18.7796 18.7045 16.4442 20.2184 13.6053L18.5542 11.9411C18.2729 11.6598 18.1851 11.2386 18.3305 10.8684C18.8148 9.63544 19.1206 8.31236 19.2159 6.93026C19.2869 5.89888 20.127 4.99976 21.2478 4.99976H24.8417Z" fill="currentColor" />
+		</symbol>
+		<symbol id="arrow-icon-2" viewBox="0 0 25 25">
+			<path d="M12.7919 16.9706C12.3916 17.4906 11.6074 17.4906 11.2071 16.9706L6.31068 10.61C5.80448 9.95242 6.27325 9 7.10309 9L16.8959 9C17.7258 9 18.1945 9.95243 17.6883 10.61L12.7919 16.9706Z" fill="#FF9A02" />
+		</symbol>
+		<symbol id="hamburger-icon" viewBox="0 0 24 24">
+			<path d="M3 7H21" stroke="#32393C" stroke-width="1.5" stroke-linecap="round" />
+			<path d="M3 12H21" stroke="#32393C" stroke-width="1.5" stroke-linecap="round" />
+			<path d="M3 17H21" stroke="#32393C" stroke-width="1.5" stroke-linecap="round" />
+		</symbol>
+		<symbol id="whatsapp-icon" viewBox="0 0 59 58">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.499998 29C0.499997 45.0163 13.4837 58 29.5 58C45.5163 58 58.5 45.0163 58.5 29C58.5 12.9837 45.5163 3.02997e-06 29.5 1.95194e-06C13.4837 8.73915e-07 0.499999 12.9837 0.499998 29ZM47.6998 27.8901C47.696 37.3958 39.9633 45.1304 30.4556 45.1343L30.4485 45.1343C27.5624 45.1333 24.7266 44.4092 22.2079 43.0353L13.0664 45.4333L15.5128 36.4975C14.0037 33.8823 13.2097 30.9158 13.211 27.8765C13.2148 18.3687 20.9506 10.6333 30.4555 10.6333C35.0685 10.6353 39.3982 12.4311 42.6539 15.6907C45.9096 18.95 47.7017 23.2825 47.6998 27.8901Z" fill="#02C8FF" />
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M17.2073 41.3365L22.632 39.9135L23.1553 40.2241C25.3559 41.53 27.8785 42.221 30.4504 42.222L30.4562 42.222C38.356 42.222 44.7856 35.7922 44.7888 27.8891C44.7903 24.0593 43.3009 20.4583 40.5948 17.7491C37.8888 15.0399 34.2901 13.5472 30.4618 13.5459C22.5559 13.5459 16.1262 19.975 16.123 27.8775C16.1219 30.5857 16.8797 33.2232 18.3144 35.5052L18.6552 36.0475L17.2073 41.3365ZM38.5541 31.6029C38.8546 31.7481 39.0575 31.8462 39.1442 31.9908C39.2519 32.1705 39.2519 33.0332 38.893 34.0398C38.5338 35.0463 36.8124 35.9649 35.9845 36.0885C35.2422 36.1995 34.3028 36.2458 33.2707 35.9178C32.6449 35.7192 31.8423 35.4541 30.8143 35.0102C26.775 33.266 24.0452 29.3509 23.5292 28.611C23.4931 28.5592 23.4678 28.5229 23.4537 28.5041L23.4502 28.4994C23.2222 28.1952 21.6943 26.1566 21.6943 24.0468C21.6943 22.0621 22.6693 21.0218 23.118 20.5429C23.1488 20.5101 23.177 20.48 23.2024 20.4523C23.5973 20.0209 24.0641 19.9131 24.3514 19.9131C24.6386 19.9131 24.9261 19.9157 25.1772 19.9284C25.2082 19.9299 25.2404 19.9297 25.2737 19.9295C25.5248 19.928 25.8378 19.9262 26.1466 20.668C26.2654 20.9535 26.4393 21.3767 26.6226 21.8231C26.9934 22.7257 27.403 23.723 27.4751 23.8673C27.5829 24.083 27.6546 24.3345 27.511 24.6222C27.4895 24.6653 27.4695 24.706 27.4505 24.7449C27.3426 24.9652 27.2633 25.1272 27.0802 25.3409C27.0082 25.425 26.9338 25.5156 26.8594 25.6062C26.7111 25.7868 26.5629 25.9673 26.4338 26.0958C26.2181 26.3107 25.9936 26.5438 26.2449 26.9752C26.4963 27.4066 27.361 28.8175 28.6419 29.9601C30.0189 31.1882 31.2156 31.7073 31.8222 31.9704C31.9406 32.0218 32.0366 32.0634 32.107 32.0987C32.5377 32.3144 32.789 32.2783 33.0404 31.9908C33.2918 31.7033 34.1175 30.7326 34.4047 30.3013C34.6919 29.8701 34.9793 29.942 35.3741 30.0857C35.7692 30.2296 37.8876 31.2719 38.3184 31.4875C38.4025 31.5296 38.4812 31.5676 38.5541 31.6029Z" fill="#02C8FF" />
+		</symbol>
+		<symbol id="youtube-icon" viewBox="0 0 59 58">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 1.95194e-06C13.4837 8.73914e-07 0.499999 12.9837 0.499998 29C0.499997 45.0163 13.4837 58 29.5 58C45.5163 58 58.5 45.0163 58.5 29C58.5 12.9837 45.5163 3.02997e-06 29.5 1.95194e-06ZM41.5853 19.0304C42.9163 19.3957 43.9645 20.4718 44.3202 21.8385C44.9667 24.3153 44.9667 29.4833 44.9667 29.4833C44.9667 29.4833 44.9667 34.6511 44.3202 37.1282C43.9645 38.4948 42.9163 39.571 41.5853 39.9364C39.1732 40.6 29.5 40.6 29.5 40.6C29.5 40.6 19.8268 40.6 17.4146 39.9364C16.0835 39.571 15.0353 38.4948 14.6796 37.1282C14.0333 34.6511 14.0333 29.4833 14.0333 29.4833C14.0333 29.4833 14.0333 24.3153 14.6796 21.8385C15.0353 20.4718 16.0835 19.3957 17.4146 19.0304C19.8268 18.3667 29.5 18.3667 29.5 18.3667C29.5 18.3667 39.1732 18.3667 41.5853 19.0304Z" fill="#02C8FF" />
+			<path d="M26.5996 34.8L26.5996 25.1333L34.3329 29.9668L26.5996 34.8Z" fill="#02C8FF" />
+		</symbol>
+		<symbol id="telegram-icon" viewBox="0 0 59 58">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M58.5 29C58.5 45.0163 45.5163 58 29.5 58C13.4837 58 0.499997 45.0163 0.499998 29C0.499999 12.9837 13.4837 8.73915e-07 29.5 1.95194e-06C45.5163 3.02997e-06 58.5 12.9837 58.5 29ZM19.9197 26.3435C17.0147 27.6119 14.0298 28.9151 11.3004 30.4185L11.3002 30.4188C9.87498 31.4622 11.7694 32.2003 13.5464 32.8926C13.829 33.0027 14.1085 33.1116 14.3713 33.2204C14.59 33.2876 14.8123 33.3584 15.0377 33.4302C17.0141 34.0599 19.218 34.7621 21.1368 33.7058C24.2888 31.8952 27.2634 29.8018 30.2357 27.7101C31.2095 27.0247 32.1831 26.3396 33.1626 25.6646C33.2084 25.6353 33.2602 25.6017 33.3168 25.565C34.1513 25.0241 36.0279 23.8077 35.3338 25.4838C33.6923 27.2789 31.9341 28.868 30.1663 30.4657C28.975 31.5424 27.7793 32.6231 26.612 33.7735C25.5953 34.5995 24.5397 36.2606 25.6781 37.4173C28.3 39.2529 30.963 41.0439 33.6244 42.8339C34.4904 43.4164 35.3563 43.9987 36.2205 44.5825C37.6853 45.7519 39.9744 44.806 40.2965 42.9786C40.4397 42.1379 40.5835 41.2973 40.7273 40.4566C41.5219 35.811 42.3167 31.1637 43.0189 26.503C43.1143 25.7719 43.2225 25.0408 43.3307 24.3093C43.5931 22.5366 43.8557 20.7617 43.9377 18.9794C43.7263 17.2008 41.5697 17.5919 40.3695 17.9918C34.2007 20.3391 28.0936 22.8604 22.0106 25.4262C21.3215 25.7315 20.6229 26.0365 19.9197 26.3435Z" fill="#02C8FF" />
+		</symbol>
+		<symbol id="vk-icon" viewBox="0 0 59 58">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0.499998 29C0.499997 45.0163 13.4837 58 29.5 58C45.5163 58 58.5 45.0163 58.5 29C58.5 12.9837 45.5163 3.02997e-06 29.5 1.95194e-06C13.4837 8.73914e-07 0.499999 12.9837 0.499998 29ZM46.5911 18.2985C47.86 18.2985 48.1465 18.9534 47.86 19.8539C47.4128 21.9177 43.6995 27.3921 42.5494 29.0877C42.3309 29.4099 42.2049 29.5956 42.2114 29.5956C41.7612 30.3324 41.5975 30.6598 42.2114 31.4785C42.4334 31.7811 42.904 32.2429 43.4419 32.7708C43.9951 33.3136 44.6195 33.9263 45.1176 34.5074C46.9186 36.554 48.3102 38.2731 48.6786 39.4601C49.0061 40.6471 48.433 41.2611 47.2051 41.2611L42.9891 41.2611C41.8719 41.2611 41.296 40.6195 40.0686 39.252C39.5423 38.6657 38.8963 37.9459 38.0364 37.0861C35.5396 34.6711 34.4344 34.3437 33.8205 34.3437C32.9609 34.3437 32.7153 34.5483 32.7153 35.7763L32.7153 39.5829C32.7153 40.6062 32.3879 41.2202 29.6864 41.2202C25.2248 41.2202 20.2721 38.5187 16.7929 33.4841C11.5537 26.1164 10.1211 20.5497 10.1211 19.4446C10.1211 18.8306 10.3258 18.2576 11.5537 18.2576L15.8106 18.2576C16.8748 18.2576 17.2841 18.7078 17.6934 19.8948C19.7809 25.9118 23.2601 31.1919 24.6927 31.1919C25.2248 31.1919 25.4704 30.9463 25.4704 29.5956L25.4704 23.374C25.3694 21.6056 24.7538 20.8351 24.2973 20.2637C24.0142 19.9094 23.7922 19.6316 23.7922 19.2399C23.7922 18.7487 24.2015 18.2576 24.8565 18.2576L31.4874 18.2576C32.3879 18.2576 32.7153 18.7487 32.7153 19.813L32.7153 28.2039C32.7153 29.1044 33.0837 29.4319 33.3702 29.4319C33.9023 29.4319 34.3526 29.1044 35.3349 28.1221C38.3639 24.7248 40.5332 19.4855 40.5332 19.4855C40.8198 18.8715 41.3109 18.2985 42.3752 18.2985L46.5911 18.2985Z" fill="#02C8FF" />
+		</symbol>
+		<symbol id="arrow-icon-3" viewBox="0 0 33 32">
+			<path d="M29.5 15C30.0523 15 30.5 15.4477 30.5 16C30.5 16.5523 30.0523 17 29.5 17L29.5 15ZM2.79289 16.7071C2.40237 16.3166 2.40237 15.6834 2.79289 15.2929L9.15686 8.92893C9.54738 8.53841 10.1805 8.53841 10.5711 8.92893C10.9616 9.31945 10.9616 9.95262 10.5711 10.3431L4.91421 16L10.5711 21.6569C10.9616 22.0474 10.9616 22.6805 10.5711 23.0711C10.1805 23.4616 9.54738 23.4616 9.15685 23.0711L2.79289 16.7071ZM29.5 17L3.5 17L3.5 15L29.5 15L29.5 17Z" fill="currentColor" />
+		</symbol>
+		<symbol id="user-icon" viewBox="0 0 25 24">
+			<g clip-path="url(#clip0_110_875)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 7C8.5 4.79086 10.2909 3 12.5 3C14.7091 3 16.5 4.79086 16.5 7C16.5 9.20914 14.7091 11 12.5 11C10.2909 11 8.5 9.20914 8.5 7ZM8.5 13C5.73858 13 3.5 15.2386 3.5 18C3.5 19.6569 4.84315 21 6.5 21H18.5C20.1569 21 21.5 19.6569 21.5 18C21.5 15.2386 19.2614 13 16.5 13H8.5Z" fill="#02C8FF" />
+			</g>
+			<defs>
+				<clipPath id="clip0_110_875">
+					<rect width="24" height="24" fill="white" transform="translate(0.5)" />
+				</clipPath>
+			</defs>
+		</symbol>
+		<symbol id="tooth-icon" viewBox="0 0 21 20">
+			<path d="M15.3004 6.76526C15.0002 5.96888 14.3872 5.38292 13.6186 5.15765C12.1591 4.72996 10.9588 5.27956 10.5001 5.54306C10.0413 5.27954 8.841 4.72994 7.38148 5.15765C6.6125 5.38302 5.99937 5.96933 5.69929 6.7662C5.30472 7.81407 5.5034 9.02272 6.23083 9.99935C6.71663 10.6516 7.03383 11.3877 7.14819 12.128C7.15479 12.1707 7.16122 12.2144 7.16753 12.259C7.27766 13.0397 7.43985 13.6664 7.64963 14.1215C7.90101 14.6669 8.22534 14.9615 8.61369 14.997C9.02531 15.0346 9.36698 14.7217 9.62951 14.0672C9.81309 13.6094 9.95784 12.9961 10.037 12.34C10.0813 11.9733 10.1849 11.6764 10.3365 11.4815C10.3905 11.4119 10.4689 11.4044 10.5001 11.4044C10.5312 11.4044 10.6096 11.4119 10.6637 11.4815C10.8153 11.6764 10.9188 11.9734 10.9631 12.34C11.0423 12.9961 11.187 13.6094 11.3706 14.0672C11.619 14.6866 11.9384 15 12.3207 15C12.3424 15 12.3643 14.999 12.3864 14.997C12.7748 14.9615 13.0991 14.6669 13.3505 14.1215C13.5603 13.6664 13.7225 13.0398 13.8326 12.259C13.8387 12.216 13.8448 12.174 13.8512 12.1327C13.9654 11.3911 14.2834 10.6527 14.7708 9.99724C15.4972 9.02066 15.6951 7.81245 15.3004 6.76526Z" fill="#02C8FF" />
+		</symbol>
+		<symbol id="quote-icon" viewBox="0 0 40 28">
+			<path d="M10.0919 27.9564C7.77297 28.1744 5.77027 27.5749 4.08378 26.158C2.5027 24.6322 1.44865 22.6703 0.921622 20.2725C0.5 18.2016 0.394595 16.0763 0.605405 13.8965C0.921622 11.6076 1.60676 9.53679 2.66081 7.68392C3.82027 5.72207 5.40135 4.0327 7.40405 2.6158C9.40676 1.19891 11.9365 0.326975 14.9932 0L16.1 4.08719C14.5189 4.52316 12.8324 5.2861 11.0405 6.37602C9.24865 7.46594 8.08919 9.3188 7.56216 11.9346L9.93378 11.4441C12.3581 11.3351 14.4135 12.0436 16.1 13.5695C17.8919 15.0954 18.7878 17.0027 18.7878 19.2916C18.7878 21.5804 17.9446 23.5967 16.2581 25.3406C14.5716 26.9755 12.5162 27.8474 10.0919 27.9564ZM30.9622 27.9564C28.5378 28.1744 26.5351 27.5749 24.9541 26.158C23.373 24.6322 22.3189 22.6703 21.7919 20.2725C21.2649 18.2016 21.1595 16.0763 21.4757 13.8965C21.7919 11.6076 22.477 9.53679 23.5311 7.68392C24.6905 5.72207 26.2716 4.0327 28.2743 2.6158C30.277 1.19891 32.7541 0.326975 35.7054 0L36.9703 4.08719C35.3892 4.52316 33.65 5.2861 31.7527 6.37602C29.9608 7.46594 28.8014 9.3188 28.2743 11.9346C28.6959 11.8256 29.0649 11.7711 29.3811 11.7711C29.8027 11.6621 30.277 11.5531 30.8041 11.4441C33.2284 11.3351 35.2838 12.0436 36.9703 13.5695C38.6568 15.0954 39.5 17.0027 39.5 19.2916C39.5 21.5804 38.6568 23.5967 36.9703 25.3406C35.3892 26.9755 33.3865 27.8474 30.9622 27.9564Z" fill="white" />
+		</symbol>
+		<symbol id="pen-icon" viewBox="0 0 24 24">
+			<path d="M4.29438 18.6438C4.25589 19.2454 4.75454 19.7441 5.35617 19.7056L7.51647 19.5674C8.22156 19.5223 8.88812 19.2299 9.3973 18.7401C10.46 17.7179 12.3741 15.8685 13.7324 14.5102C15.7071 12.5356 18.7198 9.38597 18.7198 9.38597L14.614 5.28018C14.614 5.28018 11.4644 8.29292 9.48976 10.2676C8.1315 11.6258 6.28209 13.54 5.25984 14.6027C4.77003 15.1119 4.47765 15.7784 4.43255 16.4835L4.29438 18.6438Z" fill="#02C8FF" />
+			<path d="M18.7198 9.38597L19.8962 8.20955C20.6174 7.48835 20.9512 6.43585 20.5559 5.49565C20.3561 5.0206 20.0966 4.54023 19.7782 4.22181C19.4597 3.90338 18.9794 3.64389 18.5043 3.44412C17.5641 3.04876 16.5116 3.38256 15.7904 4.10377L14.614 5.28018M18.7198 9.38597L14.614 5.28018M18.7198 9.38597C18.7198 9.38597 15.7071 12.5356 13.7324 14.5102C12.3741 15.8685 10.46 17.7179 9.3973 18.7401C8.88812 19.2299 8.22156 19.5223 7.51647 19.5674L5.35617 19.7056C4.75454 19.7441 4.25589 19.2454 4.29438 18.6438L4.43255 16.4835C4.47765 15.7784 4.77003 15.1119 5.25984 14.6027C6.28209 13.54 8.1315 11.6258 9.48976 10.2676C11.4644 8.29292 14.614 5.28018 14.614 5.28018" stroke="#02C8FF" stroke-width="1.5" fill="none" />
+		</symbol>
+		<symbol id="rub-icon" viewBox="0 0 14 18">
+			<path d="M1.92 17.568V0.432007H7.392C9.6 0.432007 11.208 0.880007 12.216 1.77601C13.24 2.67201 13.752 3.90401 13.752 5.47201C13.752 6.40001 13.544 7.27201 13.128 8.08801C12.712 8.90401 12.016 9.56001 11.04 10.056C10.08 10.552 8.768 10.8 7.104 10.8H5.544V17.568H1.92ZM0 15V12.672H9.24V15H0ZM0 10.8V7.82401H7.032V10.8H0ZM6.744 7.82401C7.432 7.82401 8.024 7.75201 8.52 7.60801C9.016 7.44801 9.4 7.20001 9.672 6.86401C9.944 6.52801 10.08 6.10401 10.08 5.59201C10.08 4.85601 9.848 4.31201 9.384 3.96001C8.92 3.59201 8.192 3.40801 7.2 3.40801H5.544V7.82401H6.744Z" fill="#32393C" />
+		</symbol>
+	</svg>
+
+</body>
+
+</html>

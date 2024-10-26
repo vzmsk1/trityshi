@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Контакты" })
+  <body style="opacity: 0">
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="main">
+        @@include('html/contacts-hero.htm',{})
+        @@include('html/contacts-info.htm',{})
+        <section class="booking booking_has-bg container">
+          <div class="booking__container">
+            <div class="booking__content">
+              <span class="booking__title">Отправьте нам сообщение</span>
+              <form action="#" class="booking__form">
+                <div class="booking__fields">
+                  <div class="booking__input-wrap field">
+                    <svg><use href="#user-icon"></use></svg>
+                    <input
+                      autocomplete="off"
+                      type="text"
+                      name="form[]"
+                      placeholder="Имя"
+                      class="field__input" />
+                  </div>
+                  <div class="booking__input-wrap field">
+                    <svg><use href="#tel-icon"></use></svg>
+                    <input
+                      data-tel-mask
+                      autocomplete="off"
+                      type="tel"
+                      name="form[]"
+                      placeholder="Номер телефона"
+                      class="field__input" />
+                  </div>
+                  <div class="booking__input-wrap field field_textarea">
+                    <svg><use href="#pen-icon"></use></svg>
+                    <textarea
+                      placeholder="Сообщение"
+                      class="field__input"></textarea>
+                  </div>
+                </div>
+                <p class="booking__text">
+                  Нажимая на кнопку 'Записаться', вы соглашаетесь с <a
+                    href="#"
+                    class="booking__text-highlight"
+                    >Политикой обработки персональных данных</a
+                  >
+                </p>
+                <button class="booking__btn btn btn_orange">
+                  <span class="btn__txt">Отправить заявку</span
+                  ><svg><use href="#arrow-icon"></use></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="booking__image-wrap">
+            <img src="@img/content/1079.webp" class="booking__image" alt="" />
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{}) @@include('html/_svg.htm',{})
+  </body>
+</html>

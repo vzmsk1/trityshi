@@ -49,6 +49,7 @@ body {
 @import 'common/swiper';
 @import 'common/video';
 @import 'common/controls';
+@import 'common/breadcrumbs';
 
 // --------------------------------------------------------------------------
 
@@ -66,3 +67,7 @@ body {
 @import 'sections/prodent';
 @import 'sections/docs';
 @import 'sections/contacts';
+@import 'sections/contacts-hero';
+@import 'sections/contacts-info';
+@import 'sections/prices';
+@import 'sections/info';

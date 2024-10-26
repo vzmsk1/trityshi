@@ -1,0 +1,360 @@
+.prices {
+  position: relative;
+
+  padding-top: 6rem;
+
+  @media (min-width: 48em) {
+    margin-bottom: 17rem;
+    padding-top: 5rem;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: -164rem;
+      left: -62rem;
+
+      width: 341.5rem;
+      height: 231.5rem;
+
+      background: url(@img/bg/1080.svg) center / contain no-repeat;
+    }
+  }
+
+  // .prices__container
+
+  &__container {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .prices__breadcrumbs
+
+  &__breadcrumbs {
+    margin-bottom: 5rem;
+  }
+
+  // .prices__title
+
+  &__title {
+    margin-bottom: 5rem;
+
+    @media (max-width: 48em) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  // .prices__services
+
+  &__services {
+    margin-bottom: 8rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+
+    @media (max-width: 48em) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  // .prices__badge
+
+  &__badge {
+  }
+
+  // .prices__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+  }
+
+  // .prices__subtitle
+
+  &__subtitle {
+    font-size: 5rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+  }
+
+  // .prices__group
+
+  &__group {
+    display: grid;
+    gap: 4rem;
+
+    @media (min-width: 48em) {
+      align-items: start;
+      grid-template-columns: 1fr 39rem;
+      gap: 2rem;
+    }
+  }
+
+  // .prices__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+
+  // .prices__item
+
+  &__item {
+    &:nth-child(odd) {
+      background-color: $white;
+    }
+  }
+
+  // .prices__consultation
+
+  &__consultation {
+  }
+}
+
+.badge {
+  padding: 1.2rem 2.4rem;
+
+  display: inline-flex;
+  border-radius: 20rem;
+  border: 1px solid $blue;
+
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  @media (max-width: 48em) {
+    padding: 1.2rem 3rem;
+
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  &._is-active {
+    color: $white;
+
+    background-color: $blue;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $white;
+
+      background-color: $blue;
+    }
+  }
+}
+
+.item-prices {
+  padding: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  border-radius: 10rem;
+
+  overflow: hidden;
+
+  @media (max-width: 48em) {
+    padding: 2.2rem 3.2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    border-radius: 3.2rem;
+
+    .btn {
+      justify-self: end;
+      width: 21rem;
+      height: 5rem;
+
+      &__txt {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // .item-prices__name-wrap
+
+  &__name-wrap {
+    margin-right: 11rem;
+
+    display: flex;
+    column-gap: 1.2rem;
+
+    @media (max-width: 48em) {
+      margin-right: 0;
+
+      grid-column: span 2;
+    }
+
+    svg {
+      flex: 0 0 4rem;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  // .item-prices__name
+
+  &__name {
+    max-width: 61.2rem;
+
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  // .item-prices__price
+
+  &__price {
+    margin-right: auto;
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    @media (max-width: 48em) {
+      padding-left: 5rem;
+
+      svg {
+        width: 1.5rem;
+        height: 1.9rem;
+      }
+    }
+
+    svg {
+      width: 1.3rem;
+      height: 1.7rem;
+
+      transform: translateY(-0.2rem);
+    }
+  }
+
+  // .item-prices__price-value
+
+  &__price-value {
+  }
+
+  // .item-prices__btn
+
+  &__btn {
+  }
+}
+
+.consultation-card {
+  position: relative;
+
+  border-radius: 3.2rem;
+
+  background-color: $white;
+
+  overflow: hidden;
+
+  @media (min-width: 48em) {
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: -3rem;
+      left: -44rem;
+
+      width: 90.9rem;
+      height: 65.6rem;
+
+      background: url(@img/bg/1081.svg) center / contain no-repeat;
+    }
+  }
+
+  &__body {
+    position: relative;
+    z-index: 2;
+
+    padding: 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: 48em) {
+      max-width: 54rem;
+    }
+  }
+
+  // .consultation-card__subtitle
+
+  &__subtitle {
+    margin-bottom: 2rem;
+
+    @media (max-width: 48em) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  // .consultation-card__text
+
+  &__text {
+    margin-bottom: 4rem;
+
+    color: #8c8e93;
+
+    @media (min-width: 48em) {
+      margin-bottom: 11.6rem;
+
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  // .consultation-card__btn
+
+  &__btn {
+    @media (max-width: 48em) {
+      min-width: 35rem;
+      width: auto;
+    }
+  }
+
+  // .consultation-card__image-wrap
+
+  &__image-wrap {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+
+    width: 25.6rem;
+
+    @media (max-width: 48em) {
+      right: -3rem;
+
+      width: 28.6rem;
+    }
+  }
+
+  // .consultation-card__image
+
+  &__image {
+  }
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  @media (max-width: 48em) {
+    font-size: 3.2rem;
+    line-height: 122%;
+  }
+}

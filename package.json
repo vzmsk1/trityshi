@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "swiper": "^11.1.14",
-    "video.js": "^8.18.1"
+    "video.js": "^8.10.0"
   }
 }
